@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"c:/Users/PC_User/Desktop/manufacturing-management-system/backend/app/core\" \"c:/Users/PC_User/Desktop/manufacturing-management-system/backend/app/auth\" \"c:/Users/PC_User/Desktop/manufacturing-management-system/backend/app/users\" \"c:/Users/PC_User/Desktop/manufacturing-management-system/backend/alembic/versions\" \"c:/Users/PC_User/Desktop/manufacturing-management-system/frontend/src/app\" \"c:/Users/PC_User/Desktop/manufacturing-management-system/frontend/src/features/auth\" \"c:/Users/PC_User/Desktop/manufacturing-management-system/frontend/src/lib/api\" \"c:/Users/PC_User/Desktop/manufacturing-management-system/frontend/src/components\" *)",
+      "Bash(docker --version)",
+      "Bash(docker compose *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\PC_User\\Desktop\\manufacturing-management-system\\backend\\app"
+    ]
+  }
+}
