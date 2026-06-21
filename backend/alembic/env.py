@@ -5,6 +5,7 @@ from sqlalchemy import engine_from_config, pool
 
 from app.core.config import settings
 from app.core.database import Base
+from app.machining import model as machining_model  # noqa: F401  (registers models on Base.metadata)
 from app.users import model  # noqa: F401  (registers models on Base.metadata)
 
 config = context.config

@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.auth.router import router as auth_router
 from app.core.config import settings
+from app.machining.router import process_router as machining_process_router
+from app.machining.router import router as machining_router
 
 app = FastAPI(title="加工管理システム + 工具管理システム API")
 
@@ -16,6 +18,8 @@ app.add_middleware(
 )
 
 app.include_router(auth_router)
+app.include_router(machining_router)
+app.include_router(machining_process_router)
 
 
 @app.get("/health")
