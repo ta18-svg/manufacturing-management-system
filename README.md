@@ -7,6 +7,14 @@
 
 Docker / FastAPI / React + TypeScript / MySQL / JWT認証 / ユーザー・権限の土台。
 
+## Phase 2：加工管理MVP（実装済み）
+
+加工依頼（machining_requests）の登録・一覧・詳細表示、工程（machining_processes）の登録・進捗更新。
+
+- API: `/api/machining/requests`（一覧・登録・詳細）, `/api/machining/requests/{id}/processes`（工程一覧・登録）, `/api/machining/processes/{id}/status`（進捗更新）
+- 画面: 加工依頼一覧（TanStack Table）、加工依頼登録、加工依頼詳細（工程一覧・追加・進捗変更）
+- 権限: 加工依頼登録・工程登録/編集は admin・leader、進捗更新は admin・leader・worker
+
 ## セットアップ
 
 ```bash
@@ -44,6 +52,8 @@ SHOW TABLES;
 | Tables_in_manufacturing_management |
 +------------------------------------+
 | alembic_version                    |
+| machining_processes                |
+| machining_requests                 |
 | roles                              |
 | users                              |
 +------------------------------------+
